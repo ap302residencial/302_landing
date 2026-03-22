@@ -1,0 +1,107 @@
+/* ================================
+   Apartamento 302 — Custom CSS
+   ================================ */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent FOUC on alpine-controlled elements */
+[x-cloak] {
+  display: none !important;
+}
+
+/* Navbar transition */
+nav {
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hide scrollbar on tab row (mobile swipe) */
+.tab-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.tab-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Gallery tab content fade-in on switch */
+.tab-content {
+  animation: tabFadeIn 0.3s ease;
+}
+
+@keyframes tabFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lucide icon display normalization */
+[data-lucide] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Gallery image hover */
+.gallery-thumb {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.gallery-thumb:hover {
+  transform: scale(1.06);
+}
+
+/* Sticky WhatsApp button pulse ring */
+.wa-ring {
+  animation: waPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes waPulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+}
+
+/* FAQ accordion smooth transition */
+[x-collapse] {
+  overflow: hidden;
+}
+
+/* Prevent body scroll when lightbox is open */
+body.lightbox-open {
+  overflow: hidden;
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(
+    105deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.45) 55%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+/* Section divider accent line */
+.accent-line {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: #B5946A;
+  margin-bottom: 1rem;
+}
+
+/* Price highlight */
+.price-badge {
+  background: linear-gradient(135deg, #B5946A 0%, #9a7d5a 100%);
+}
