@@ -196,7 +196,7 @@ document.addEventListener('alpine:init', () => {
       },
       {
         q: 'Qual a área e o número de quartos?',
-        a: 'O apartamento conta com 66m² de área total, com sala integrada à cozinha, quarto principal, quarto de visita com home office, banheiro e área de serviço.',
+        a: 'O apartamento conta com 56m² de área total, com sala integrada à cozinha, quarto principal, quarto de visita com home office, banheiro e área de serviço.',
       },
       {
         q: 'Há vaga de garagem inclusa?',
